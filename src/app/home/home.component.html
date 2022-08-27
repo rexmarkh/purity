@@ -8,15 +8,77 @@
 </ion-header>
 <ion-content>
   <ion-card class="ion-text-center">
-    <img class="logo" src="assets/ngx-rocket-logo.png" alt="angular logo" />
     <ion-card-content>
       <ion-card-title>
-        <span translate>Hello world !</span>
+        <div style="margin-bottom: 16px">Tank Cleaning Services</div>
+        <img class="logo" src="./../../assets/clean3.webp" alt="Purity_Tank_Cleaners" />
       </ion-card-title>
       <p>
         <app-loader [isLoading]="isLoading"></app-loader>
-        <q [hidden]="isLoading">{{ quote }}</q>
+        Our company offers cleaning services for underground water tanks for reasonable rates. Contact for details.
       </p>
     </ion-card-content>
   </ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card class="ion-text-center" style="margin: 0">
+          <ion-card-content>
+            <ion-card-title>
+              <img class="logo" src="./../../assets/clean.jpeg" alt="Purity_Tank_Cleaners" />
+            </ion-card-title>
+            <p>
+              <app-loader [isLoading]="isLoading"></app-loader>
+              Our company offers cleaning services for underground water tanks for reasonable rates. Contact for
+              details.
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card class="ion-text-center" style="margin: 0">
+          <ion-card-content>
+            <ion-card-title>
+              <img class="logo" src="./../../assets/clean1.webp" alt="Purity_Tank_Cleaners" />
+            </ion-card-title>
+            <p>
+              <app-loader [isLoading]="isLoading"></app-loader>
+              Our company offers cleaning services for underground water tanks for reasonable rates. Contact for
+              details.
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card class="ion-text-center" style="margin: 0">
+          <ion-card-content>
+            <ion-card-title>
+              <img class="logo" src="./../../assets/clean2.webp" alt="Purity_Tank_Cleaners" />
+            </ion-card-title>
+            <p>
+              <app-loader [isLoading]="isLoading"></app-loader>
+              Our company offers cleaning services for underground water tanks for reasonable rates. Contact for
+              details.
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card class="ion-text-center" style="margin: 0">
+          <ion-card-content>
+            <ion-card-title>
+              <img class="logo" src="./../../assets/clean1.webp" alt="Purity_Tank_Cleaners" />
+            </ion-card-title>
+            <p>
+              <app-loader [isLoading]="isLoading"></app-loader>
+              Our company offers cleaning services for underground water tanks for reasonable rates. Contact for
+              details.
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
