@@ -22,7 +22,7 @@
   <ion-grid>
     <ion-row>
       <ion-col size="6">
-        <ion-card class="ion-text-center" style="margin: 0">
+        <ion-card class="ion-text-center" style="margin: 0" (click)="presentActionSheet()">
           <ion-card-content>
             <ion-card-title>
               <img class="logo" src="./../../assets/clean.jpeg" alt="Purity_Tank_Cleaners" />
@@ -36,7 +36,7 @@
         </ion-card>
       </ion-col>
       <ion-col size="6">
-        <ion-card class="ion-text-center" style="margin: 0">
+        <ion-card class="ion-text-center" style="margin: 0" (click)="presentActionSheet()">
           <ion-card-content>
             <ion-card-title>
               <img class="logo" src="./../../assets/clean1.webp" alt="Purity_Tank_Cleaners" />
@@ -52,7 +52,7 @@
     </ion-row>
     <ion-row>
       <ion-col size="6">
-        <ion-card class="ion-text-center" style="margin: 0">
+        <ion-card class="ion-text-center" style="margin: 0" (click)="presentActionSheet()">
           <ion-card-content>
             <ion-card-title>
               <img class="logo" src="./../../assets/clean2.webp" alt="Purity_Tank_Cleaners" />
@@ -66,7 +66,7 @@
         </ion-card>
       </ion-col>
       <ion-col size="6">
-        <ion-card class="ion-text-center" style="margin: 0">
+        <ion-card class="ion-text-center" style="margin: 0" (click)="presentActionSheet()">
           <ion-card-content>
             <ion-card-title>
               <img class="logo" src="./../../assets/clean1.webp" alt="Purity_Tank_Cleaners" />
@@ -81,4 +81,33 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+  <ion-button expand="block" (click)="setOpen(true)">Open</ion-button>
+  <ion-modal [isOpen]="isModalOpen">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>ABOUT US</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="setOpen(false)">Close</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <ion-card-content>
+          <ion-card-title>
+            <div style="margin-bottom: 16px">Tank Cleaning Services</div>
+            <img class="logo" src="./../../assets/bg.webp" alt="Purity_Tank_Cleaners" />
+          </ion-card-title>
+          <p>
+            <app-loader [isLoading]="isLoading"></app-loader>
+            We, RD Water Tank Cleaning Services, situated at Nemilichery-Chrompet, Chennai, Tamil Nadu, offer extremely
+            articulate and efficient tank cleaning services. We take our job seriously and make sure our customers are
+            happy with what we have to offer. We understand how important it is to clean the tank as it can cause
+            contamination if not cleaned regularly. We, thus, strive to do so and make sure your liquids and other items
+            are toxic free! Contact us today to avail our services.
+          </p>
+        </ion-card-content>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
 </ion-content>

@@ -7,3 +7,9 @@ q {
   font-style: italic;
   quotes: "« " " »";
 }
+
+ion-grid {
+  ion-card {
+    cursor: pointer;
+  }
+}
