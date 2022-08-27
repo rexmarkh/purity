@@ -1,7 +1,0 @@
-{
-  "name": "Purity",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
